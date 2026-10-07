@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WS Automotive | Oficina Mecânica, Suspensão, Freios e Alinhamento</title>
+  <meta name="description" content="WS Automotive: borracharia, suspensão, revisão preventiva, troca de óleo, freios, balanceamento e alinhamento. Av. Brasília, 854 - Bairro Edna - Prata/MG. Agende pelo WhatsApp (34) 99283-3232.">
+  <meta name="theme-color" content="#06070b">
+
+  <meta property="og:title" content="WS Automotive | Oficina Mecânica">
+  <meta property="og:description" content="Seu carro em boas mãos. Agende pelo WhatsApp (34) 99283-3232.">
+  <meta property="og:image" content="assets/ws-logo.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800;1,900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="WS Automotive - início">
+        <img src="assets/ws-logo-transparente.png" alt="WS Automotive" class="logo__img" width="710" height="390">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Menu principal">
+        <a href="#servicos" class="nav__link">Serviços</a>
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#processo" class="nav__link">Como funciona</a>
+        <a href="#agendar" class="nav__link">Agendar</a>
+        <a href="#contato" class="nav__link">Contato</a>
+        <a href="https://wa.me/5534992833232" target="_blank" rel="noopener" class="btn btn--primary btn--sm nav__cta">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          Chamar no WhatsApp
+        </a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="eyebrow reveal">
+            <span class="eyebrow__dot"></span>
+            Oficina mecânica &amp; centro automotivo
+          </span>
+
+          <h1 class="hero__title reveal">
+            Seu carro em <span class="text-gradient">boas mãos</span>,
+            do pneu ao motor.
+          </h1>
+
+          <p class="hero__text reveal">
+            Suspensão, freios, alinhamento, balanceamento, troca de óleo e revisão preventiva
+            com diagnóstico honesto, peças de qualidade e atendimento direto com quem entende.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="https://wa.me/5534992833232?text=Ol%C3%A1%2C%20WS%20Automotive!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Fazer orçamento grátis
+            </a>
+            <a href="#servicos" class="btn btn--ghost btn--lg">
+              Ver serviços
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero__stats reveal">
+            <li>
+              <strong><span data-count="7">0</span></strong>
+              <span>serviços especializados</span>
+            </li>
+            <li>
+              <strong><span data-count="100">0</span>%</strong>
+              <span>orçamento transparente</span>
+            </li>
+            <li>
+              <strong>(34)</strong>
+              <span>atendimento rápido no WhatsApp</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__card" id="tiltCard">
+            <img src="./assets/838964947_2265555397557630_8832965632865470067_n.jpg" alt="Logotipo WS Automotive com engrenagem e chave sobre fundo de peças automotivas" width="720" height="1290">
+            <div class="hero__card-shine" aria-hidden="true"></div>
+          </div>
+          <div class="hero__badge hero__badge--top">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"/></svg>
+            <div>
+              <strong>Serviço garantido</strong>
+              <span>Peças de procedência</span>
+            </div>
+          </div>
+          <div class="hero__badge hero__badge--bottom">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
+            <div>
+              <strong>Av. Brasília, 854</strong>
+              <span>Bairro Edna - Prata/MG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#servicos" class="hero__scroll" aria-label="Rolar para serviços">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Borracharia</span><i></i><span>Suspensão</span><i></i><span>Revisão Preventiva</span><i></i><span>Troca de Óleo</span><i></i><span>Freios</span><i></i><span>Balanceamento</span><i></i><span>Alinhamento</span><i></i>
+        <span>Borracharia</span><i></i><span>Suspensão</span><i></i><span>Revisão Preventiva</span><i></i><span>Troca de Óleo</span><i></i><span>Freios</span><i></i><span>Balanceamento</span><i></i><span>Alinhamento</span><i></i>
+      </div>
+    </div>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Nossos serviços</span>
+          <h2 class="section__title">Tudo o que seu carro precisa <span class="text-gradient">em um só lugar</span></h2>
+          <p class="section__text">Do pneu furado à revisão completa: equipe preparada e equipamentos certos para cada serviço.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card reveal" data-service="Borracharia">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="19"/><circle cx="24" cy="24" r="11"/><circle cx="24" cy="24" r="4"/><path d="M24 5v6M24 37v6M5 24h6M37 24h6M10.6 10.6l4.2 4.2M33.2 33.2l4.2 4.2M10.6 37.4l4.2-4.2M33.2 14.8l4.2-4.2"/></svg>
+            </div>
+            <span class="service-card__num">01</span>
+            <h3>Borracharia</h3>
+            <p>Conserto de furos, troca e montagem de pneus, calibragem e reparo de câmaras com rapidez.</p>
+            <button class="service-card__link" type="button">Agendar <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="service-card reveal" data-service="Suspensão">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="19" y="4" width="10" height="8" rx="2"/><path d="M24 12v4"/><path d="M15 17l18 3M15 22l18 3M15 27l18 3M15 32l18 3"/><path d="M24 35v3"/><rect x="19" y="38" width="10" height="6" rx="2"/></svg>
+            </div>
+            <span class="service-card__num">02</span>
+            <h3>Suspensão</h3>
+            <p>Amortecedores, molas, bandejas, pivôs e buchas. Mais conforto, estabilidade e segurança.</p>
+            <button class="service-card__link" type="button">Agendar <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="service-card reveal" data-service="Revisão Preventiva">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="8" width="26" height="34" rx="3"/><rect x="16" y="4" width="12" height="7" rx="2"/><path d="M14 20l2.5 2.5L21 18M14 29l2.5 2.5L21 27M25 21h5M25 30h5"/><circle cx="36" cy="37" r="7"/><path d="M33 37l2.2 2.2L39 35.2"/></svg>
+            </div>
+            <span class="service-card__num">03</span>
+            <h3>Revisão Preventiva</h3>
+            <p>Checklist completo do veículo para evitar surpresas na estrada e gastos maiores no futuro.</p>
+            <button class="service-card__link" type="button">Agendar <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="service-card reveal" data-service="Troca de Óleo">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 20h8l4-4h8l14-4v4l-12 10H10a4 4 0 0 1-4-4z"/><path d="M14 16v-4h6"/><path d="M40 16l3 3"/><path d="M42 26c0 0-3 4-3 6a3 3 0 0 0 6 0c0-2-3-6-3-6z"/><path d="M10 26v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8"/></svg>
+            </div>
+            <span class="service-card__num">04</span>
+            <h3>Troca de Óleo</h3>
+            <p>Óleo e filtros adequados à especificação do fabricante para prolongar a vida do motor.</p>
+            <button class="service-card__link" type="button">Agendar <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="service-card reveal" data-service="Freios">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="6"/><circle cx="24" cy="12" r="1.5"/><circle cx="24" cy="36" r="1.5"/><circle cx="12" cy="24" r="1.5"/><circle cx="36" cy="24" r="1.5"/><path d="M36 8a20 20 0 0 1 6 10l-6 2a14 14 0 0 0-4-7z"/></svg>
+            </div>
+            <span class="service-card__num">05</span>
+            <h3>Freios</h3>
+            <p>Pastilhas, discos, lonas, fluido e regulagem. Frenagem precisa para sua segurança.</p>
+            <button class="service-card__link" type="button">Agendar <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="service-card reveal" data-service="Balanceamento">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="6" width="16" height="36" rx="2"/><rect x="7" y="10" width="10" height="7" rx="1"/><path d="M8 22h8M8 26h8"/><circle cx="33" cy="30" r="11"/><circle cx="33" cy="30" r="5"/><path d="M33 19v-4M20 30h2"/><rect x="31" y="17" width="4" height="3" rx="1"/></svg>
+            </div>
+            <span class="service-card__num">06</span>
+            <h3>Balanceamento</h3>
+            <p>Eliminamos vibrações no volante e desgaste irregular com balanceamento computadorizado.</p>
+            <button class="service-card__link" type="button">Agendar <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="service-card reveal" data-service="Alinhamento">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="10" width="8" height="28" rx="3"/><rect x="36" y="10" width="8" height="28" rx="3"/><path d="M12 24h24"/><circle cx="24" cy="24" r="4"/><path d="M4 16h8M4 22h8M4 28h8M4 34h8M36 16h8M36 22h8M36 28h8M36 34h8"/></svg>
+            </div>
+            <span class="service-card__num">07</span>
+            <h3>Alinhamento</h3>
+            <p>Geometria ajustada para o carro andar reto, economizar pneus e combustível.</p>
+            <button class="service-card__link" type="button">Agendar <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="service-card service-card--cta reveal">
+            <h3>Não encontrou o que precisa?</h3>
+            <p>Fale com a gente. Avaliamos o seu carro e indicamos a melhor solução.</p>
+            <a href="https://wa.me/5534992833232?text=Ol%C3%A1%2C%20WS%20Automotive!%20Tenho%20uma%20d%C3%BAvida%20sobre%20meu%20carro." target="_blank" rel="noopener" class="btn btn--light">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Falar agora
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE / DIFERENCIAIS ===== -->
+    <section class="section about" id="sobre">
+      <div class="container about__inner">
+        <div class="about__media reveal">
+          <div class="about__frame">
+            <img src="assets/ws-banner.jpg" alt="Banner WS Automotive com a lista de serviços da oficina" width="756" height="1600" loading="lazy">
+          </div>
+          <div class="about__tag">
+            <strong>WS</strong>
+            <span>Automotive</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <span class="section__tag reveal">Por que a WS Automotive</span>
+          <h2 class="section__title reveal">Confiança se constrói <span class="text-gradient">com transparência</span></h2>
+          <p class="section__text reveal">
+            Aqui você sabe exatamente o que está sendo feito no seu carro. Explicamos o problema,
+            mostramos as peças e só executamos o serviço com a sua aprovação.
+          </p>
+
+          <ul class="features">
+            <li class="feature reveal">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search"/></svg></div>
+              <div>
+                <h3>Diagnóstico preciso</h3>
+                <p>Avaliação cuidadosa antes de qualquer troca. Nada de serviço desnecessário.</p>
+              </div>
+            </li>
+            <li class="feature reveal">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-file"/></svg></div>
+              <div>
+                <h3>Orçamento claro</h3>
+                <p>Valores detalhados e combinados antes. Sem surpresas na hora de pagar.</p>
+              </div>
+            </li>
+            <li class="feature reveal">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"/></svg></div>
+              <div>
+                <h3>Peças de qualidade</h3>
+                <p>Trabalhamos com marcas confiáveis para garantir durabilidade.</p>
+              </div>
+            </li>
+            <li class="feature reveal">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clock"/></svg></div>
+              <div>
+                <h3>Agilidade no atendimento</h3>
+                <p>Agende pelo WhatsApp e seja atendido sem perder o seu dia.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESSO ===== -->
+    <section class="section process" id="processo">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Como funciona</span>
+          <h2 class="section__title">Simples, rápido e <span class="text-gradient">sem complicação</span></h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">1</span>
+            <h3>Chame no WhatsApp</h3>
+            <p>Conte o que está acontecendo com o carro ou qual serviço você precisa.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">2</span>
+            <h3>Agende o horário</h3>
+            <p>Combinamos o melhor dia e horário para você trazer o veículo.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">3</span>
+            <h3>Diagnóstico e orçamento</h3>
+            <p>Avaliamos o carro e passamos o orçamento detalhado para sua aprovação.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">4</span>
+            <h3>Carro pronto</h3>
+            <p>Serviço executado com qualidade e seu carro devolvido pronto para rodar.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== AGENDAMENTO ===== -->
+    <section class="section booking" id="agendar">
+      <div class="container">
+        <div class="booking__box reveal">
+          <div class="booking__info">
+            <span class="section__tag section__tag--light">Agendamento</span>
+            <h2 class="section__title">Agende seu serviço em <span class="text-accent">poucos segundos</span></h2>
+            <p>Preencha os dados ao lado e a mensagem chega pronta no nosso WhatsApp. É só enviar.</p>
+            <a href="tel:+5534992833232" class="booking__phone">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              (34) 99283-3232
+            </a>
+          </div>
+
+          <form class="form" id="bookingForm" novalidate>
+            <div class="form__row">
+              <label class="field">
+                <span>Seu nome</span>
+                <input type="text" name="nome" id="fNome" placeholder="Ex.: João Silva" autocomplete="name" required>
+              </label>
+              <label class="field">
+                <span>Veículo</span>
+                <input type="text" name="veiculo" id="fVeiculo" placeholder="Ex.: Gol 2015" required>
+              </label>
+            </div>
+
+            <fieldset class="field field--chips">
+              <legend>Serviços desejados</legend>
+              <div class="chips" id="chips">
+                <label class="chip"><input type="checkbox" value="Borracharia"><span>Borracharia</span></label>
+                <label class="chip"><input type="checkbox" value="Suspensão"><span>Suspensão</span></label>
+                <label class="chip"><input type="checkbox" value="Revisão Preventiva"><span>Revisão Preventiva</span></label>
+                <label class="chip"><input type="checkbox" value="Troca de Óleo"><span>Troca de Óleo</span></label>
+                <label class="chip"><input type="checkbox" value="Freios"><span>Freios</span></label>
+                <label class="chip"><input type="checkbox" value="Balanceamento"><span>Balanceamento</span></label>
+                <label class="chip"><input type="checkbox" value="Alinhamento"><span>Alinhamento</span></label>
+              </div>
+            </fieldset>
+
+            <label class="field">
+              <span>Observações <small>(opcional)</small></span>
+              <textarea name="obs" id="fObs" rows="3" placeholder="Ex.: barulho na suspensão dianteira ao passar em buracos"></textarea>
+            </label>
+
+            <p class="form__error" id="formError" role="alert" hidden></p>
+
+            <button type="submit" class="btn btn--primary btn--lg btn--block">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Enviar pelo WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO / LOCALIZAÇÃO ===== -->
+    <section class="section contact" id="contato">
+      <div class="container contact__inner">
+        <div class="contact__info">
+          <span class="section__tag reveal">Onde estamos</span>
+          <h2 class="section__title reveal">Venha nos <span class="text-gradient">visitar</span></h2>
+
+          <ul class="contact__list">
+            <li class="reveal">
+              <div class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg></div>
+              <div>
+                <span>Endereço</span>
+                <strong>Av. Brasília, 854<br>Bairro Edna - Prata/MG</strong>
+                <a href="https://www.google.com/maps/search/?api=1&query=Av.+Bras%C3%ADlia%2C+854%2C+Edna%2C+Prata+-+MG" target="_blank" rel="noopener">Abrir no Google Maps →</a>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg></div>
+              <div>
+                <span>WhatsApp</span>
+                <strong>(34) 99283-3232</strong>
+                <a href="https://wa.me/5534992833232" target="_blank" rel="noopener">Iniciar conversa →</a>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-instagram"/></svg></div>
+              <div>
+                <span>Instagram</span>
+                <strong>@wemersoncosta_wsautomotive</strong>
+                <a href="https://www.instagram.com/wemersoncosta_wsautomotive/" target="_blank" rel="noopener">Seguir no Instagram →</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact__map reveal">
+          <iframe
+            title="Mapa: WS Automotive - Av. Brasília, 854, Bairro Edna, Prata - MG"
+            src="https://maps.google.com/maps?q=Av.%20Bras%C3%ADlia%2C%20854%2C%20Edna%2C%20Prata%20-%20MG&z=16&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo" aria-label="WS Automotive - voltar ao início">
+        <img src="assets/ws-logo-transparente.png" alt="WS Automotive" class="logo__img" width="710" height="390">
+      </a>
+        <p>Oficina mecânica e centro automotivo. Qualidade, transparência e confiança em cada serviço.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/wemersoncosta_wsautomotive/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-instagram"/></svg>
+          </a>
+          <a href="https://wa.me/5534992833232" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Serviços</h4>
+        <ul>
+          <li>Borracharia</li>
+          <li>Suspensão</li>
+          <li>Revisão Preventiva</li>
+          <li>Troca de Óleo</li>
+          <li>Freios</li>
+          <li>Balanceamento</li>
+          <li>Alinhamento</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul>
+          <li>Av. Brasília, 854</li>
+          <li>Bairro Edna - Prata/MG</li>
+          <li><a href="https://wa.me/5534992833232" target="_blank" rel="noopener">(34) 99283-3232</a></li>
+          <li><a href="https://www.instagram.com/wemersoncosta_wsautomotive/" target="_blank" rel="noopener">@wemersoncosta_wsautomotive</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© <span id="year"></span> WS Automotive. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLUTUANTE ===== -->
+  <a href="https://wa.me/5534992833232?text=Ol%C3%A1%2C%20WS%20Automotive!" class="wa-float" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    <span class="wa-float__tip">Fale conosco!</span>
+  </a>
+
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- ===== SPRITE DE ÍCONES ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.88.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.38 9.38 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.42-9.44 9.42zm8.03-17.46A11.27 11.27 0 0 0 12.05.72C5.79.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.6l6.01-1.58a11.33 11.33 0 0 0 5.43 1.38h.01c6.25 0 11.34-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02z"/>
+    </symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></g>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></g>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></g>
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></g>
+    </symbol>
+    <symbol id="i-file" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></g>
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g>
+    </symbol>
+  </svg>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
