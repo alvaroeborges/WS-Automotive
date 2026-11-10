@@ -10,6 +10,36 @@
   <meta property="og:title" content="WS Automotive | Oficina Mecânica">
   <meta property="og:description" content="Seu carro em boas mãos. Agende pelo WhatsApp (34) 99283-3232.">
   <meta property="og:image" content="assets/ws-logo.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "WS Automotive",
+    "description": "Oficina mecânica e centro automotivo: borracharia, suspensão, revisão preventiva, troca de óleo, freios, balanceamento e alinhamento.",
+    "image": "assets/ws-logo.jpg",
+    "telephone": "+55 34 99283-3232",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Brasília, 854 - Bairro Edna",
+      "addressLocality": "Prata",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "08:00", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "12:30" }
+    ],
+    "sameAs": ["https://www.instagram.com/ws_automotive22/"]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +53,7 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#inicio" class="logo" aria-label="WS Automotive - início">
-        <img src="assets/ws-logo-transparente.png" alt="WS Automotive" class="logo__img" width="710" height="390">
+        <img src="assets/ws-logo.webp" alt="WS Automotive" class="logo__img" width="420" height="231">
       </a>
 
       <nav class="nav" id="nav" aria-label="Menu principal">
@@ -36,7 +66,24 @@
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg>
           Chamar no WhatsApp
         </a>
+
+        <div class="nav__extra">
+          <p>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clock"/></svg>
+            Seg a Sex 8h–18h (Ter até 18h30) · Sáb 8h–12h30
+          </p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Av.+Bras%C3%ADlia%2C+854%2C+Edna%2C+Prata+-+MG" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg>
+            Av. Brasília, 854 - Prata/MG
+          </a>
+          <a href="https://www.instagram.com/ws_automotive22/" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-instagram"/></svg>
+            @ws_automotive22
+          </a>
+        </div>
       </nav>
+
+      <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
 
       <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
@@ -91,7 +138,7 @@
               <span>orçamento transparente</span>
             </li>
             <li>
-              <strong>(34)</strong>
+              <strong>(34) 9 92833232</strong>
               <span>atendimento rápido no WhatsApp</span>
             </li>
           </ul>
@@ -99,7 +146,7 @@
 
         <div class="hero__visual reveal">
           <div class="hero__card" id="tiltCard">
-            <img src="./assets/838964947_2265555397557630_8832965632865470067_n.jpg" alt="Logotipo WS Automotive com engrenagem e chave sobre fundo de peças automotivas" width="720" height="1290">
+            <img src="assets/ws-hero.webp" alt="Logotipo WS Automotive com engrenagem e chave sobre fundo de peças automotivas" width="680" height="1218" fetchpriority="high">
             <div class="hero__card-shine" aria-hidden="true"></div>
           </div>
           <div class="hero__badge hero__badge--top">
@@ -229,7 +276,7 @@
       <div class="container about__inner">
         <div class="about__media reveal">
           <div class="about__frame">
-            <img src="assets/ws-banner.jpg" alt="Banner WS Automotive com a lista de serviços da oficina" width="756" height="1600" loading="lazy">
+            <img src="assets/ws-banner.webp" alt="Banner WS Automotive com a lista de serviços da oficina" width="756" height="1600" loading="lazy">
           </div>
           <div class="about__tag">
             <strong>WS</strong>
@@ -338,6 +385,22 @@
               </label>
             </div>
 
+            <div class="form__row">
+              <label class="field">
+                <span>Dia preferido <small>(opcional)</small></span>
+                <input type="date" name="data" id="fData">
+              </label>
+              <label class="field">
+                <span>Período <small>(opcional)</small></span>
+                <select name="periodo" id="fPeriodo">
+                  <option value="">Sem preferência</option>
+                  <option value="Manhã">Manhã (8h–12h)</option>
+                  <option value="Tarde">Tarde (a partir das 12h)</option>
+                </select>
+              </label>
+            </div>
+            <p class="form__hint">Atendemos de segunda a sexta, das 8h às 18h (às terças, até 18h30), e aos sábados, das 8h às 12h30.</p>
+
             <fieldset class="field field--chips">
               <legend>Serviços desejados</legend>
               <div class="chips" id="chips">
@@ -367,6 +430,43 @@
       </div>
     </section>
 
+    <!-- ===== PERGUNTAS FREQUENTES ===== -->
+    <section class="section faq" id="duvidas">
+      <div class="container faq__inner">
+        <div class="section__head reveal">
+          <span class="section__tag">Dúvidas frequentes</span>
+          <h2 class="section__title">Perguntas que <span class="text-gradient">sempre recebemos</span></h2>
+        </div>
+
+        <div class="faq__list">
+          <details class="faq__item reveal">
+            <summary>O orçamento é gratuito?</summary>
+            <p>Sim. Avaliamos o carro e passamos o orçamento detalhado sem custo. Você só paga se aprovar o serviço.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Qual o horário de funcionamento?</summary>
+            <p>Segunda, quarta, quinta e sexta, das 8h às 18h. Terça, das 8h às 18h30. Sábado, das 8h às 12h30. Aos domingos a oficina fica fechada.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Preciso agendar ou posso ir direto?</summary>
+            <p>Recomendamos agendar pelo WhatsApp: assim reservamos um horário para o seu carro e você não perde tempo esperando.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Vocês fazem algum serviço sem eu autorizar?</summary>
+            <p>Nunca. Explicamos o problema, mostramos as peças e só executamos o serviço depois da sua aprovação.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Que tipo de peças vocês usam?</summary>
+            <p>Trabalhamos com peças de procedência e marcas confiáveis, para garantir durabilidade e segurança.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Onde fica a oficina?</summary>
+            <p>Na Av. Brasília, 854, Bairro Edna, em Prata/MG. <a href="#contato">Veja o mapa abaixo</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== CONTATO / LOCALIZAÇÃO ===== -->
     <section class="section contact" id="contato">
       <div class="container contact__inner">
@@ -384,6 +484,14 @@
               </div>
             </li>
             <li class="reveal">
+              <div class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clock"/></svg></div>
+              <div>
+                <span>Horário de funcionamento</span>
+                <strong>Seg, Qua, Qui e Sex: 8h às 18h<br>Terça: 8h às 18h30<br>Sábado: 8h às 12h30<br>Domingo: fechado</strong>
+                <em class="open-status" id="openStatus" hidden></em>
+              </div>
+            </li>
+            <li class="reveal">
               <div class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-whatsapp"/></svg></div>
               <div>
                 <span>WhatsApp</span>
@@ -395,8 +503,8 @@
               <div class="contact__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-instagram"/></svg></div>
               <div>
                 <span>Instagram</span>
-                <strong>@wemersoncosta_wsautomotive</strong>
-                <a href="https://www.instagram.com/wemersoncosta_wsautomotive/" target="_blank" rel="noopener">Seguir no Instagram →</a>
+                <strong>@ws_automotive22</strong>
+                <a href="https://www.instagram.com/ws_automotive22/" target="_blank" rel="noopener">Seguir no Instagram →</a>
               </div>
             </li>
           </ul>
@@ -418,11 +526,11 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="#inicio" class="logo" aria-label="WS Automotive - voltar ao início">
-        <img src="assets/ws-logo-transparente.png" alt="WS Automotive" class="logo__img" width="710" height="390">
+        <img src="assets/ws-logo.webp" alt="WS Automotive" class="logo__img" width="420" height="231">
       </a>
         <p>Oficina mecânica e centro automotivo. Qualidade, transparência e confiança em cada serviço.</p>
         <div class="socials">
-          <a href="https://www.instagram.com/wemersoncosta_wsautomotive/" target="_blank" rel="noopener" aria-label="Instagram">
+          <a href="https://www.instagram.com/ws_automotive22/" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-instagram"/></svg>
           </a>
           <a href="https://wa.me/5534992833232" target="_blank" rel="noopener" aria-label="WhatsApp">
@@ -434,13 +542,13 @@
       <div class="footer__col">
         <h4>Serviços</h4>
         <ul>
-          <li>Borracharia</li>
-          <li>Suspensão</li>
-          <li>Revisão Preventiva</li>
-          <li>Troca de Óleo</li>
-          <li>Freios</li>
-          <li>Balanceamento</li>
-          <li>Alinhamento</li>
+          <li><a href="#servicos">Borracharia</a></li>
+          <li><a href="#servicos">Suspensão</a></li>
+          <li><a href="#servicos">Revisão Preventiva</a></li>
+          <li><a href="#servicos">Troca de Óleo</a></li>
+          <li><a href="#servicos">Freios</a></li>
+          <li><a href="#servicos">Balanceamento</a></li>
+          <li><a href="#servicos">Alinhamento</a></li>
         </ul>
       </div>
 
@@ -450,7 +558,17 @@
           <li>Av. Brasília, 854</li>
           <li>Bairro Edna - Prata/MG</li>
           <li><a href="https://wa.me/5534992833232" target="_blank" rel="noopener">(34) 99283-3232</a></li>
-          <li><a href="https://www.instagram.com/wemersoncosta_wsautomotive/" target="_blank" rel="noopener">@wemersoncosta_wsautomotive</a></li>
+          <li><a href="https://www.instagram.com/ws_automotive22/" target="_blank" rel="noopener">@ws_automotive22</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Horário</h4>
+        <ul>
+          <li>Seg, Qua, Qui e Sex: 8h às 18h</li>
+          <li>Terça: 8h às 18h30</li>
+          <li>Sábado: 8h às 12h30</li>
+          <li>Domingo: fechado</li>
         </ul>
       </div>
     </div>
